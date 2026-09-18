@@ -6,6 +6,10 @@ const userSchema = new Schema(
       type: String,
       trim: true,
     },
+    avatar: {
+      type: String,
+      default: 'https://ac.goit.global/fullstack/react/default-avatar.jpg',
+    },
     email: {
       type: String,
       required: true,
