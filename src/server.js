@@ -24,8 +24,8 @@ app.use(authRoutes);
 app.use(notesRoutes);
 app.use(userRoutes);
 
-app.use(errors());
 app.use(notFoundHandler);
+app.use(errors());
 app.use(errorHandler);
 
 const startServer = async () => {
